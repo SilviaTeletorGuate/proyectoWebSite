@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)http://127.0.0.1:5500/paginas/project.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="./Project_files/style.css">
+</head>
+<body>
+    <nav class="principal">
+        <div class="logo"></div>
+        <div class="central">
+            <h1>Mi Espacio Personal</h1>
+        <p>Un lugar para crear, aprender y compartir!</p>
+        </div>
+        <ul class="menu">
+            <li><a href="http://127.0.0.1:5500/myWebsite.html">Inicio</a></li>
+            <li><a href="http://127.0.0.1:5500/paginas/project.html">Proyectos</a></li>
+            <li><a href="http://127.0.0.1:5500/paginas/article.html">Articulos</a></li>
+            <li><a href="http://127.0.0.1:5500/paginas/contact.html">Contactos</a></li>
+        </ul>
+        
+    </nav>
+    <section class="tittle-proyect">
+        <div class="izquierda">
+        <h2>Nuestro Proyecto</h2>
+        <p>Desarrrollo y diseño de una soluciòn digital</p>
+        </div>
+            <div class="banner"></div>
+    </section>
+    <section class="info-details">
+        <div class="tittle-details"><h1>Info / Detalles del proyecto</h1></div>
+        <div class="details">
+        <div class="detail">
+            <h2>Descripción</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet,
+                 eaque? Facilis voluptates deserunt et. Sed aliquid voluptatum 
+                 repellendus ducimus in odio deserunt illum ab ad adipisci voluptate
+                  nobis, aspernatur cupiditate!</p>
+        </div>
+        <div class="detail">
+            <h2>Fecha</h2>
+            <p>Abril 2026</p>
+        </div>
+        <div class="detail">
+            <h2>Cliente</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        </div>
+    </section>
+    <section class="gallery">
+        <div class="tittle-gallery">
+            <h2>Galerìa de Imagenes</h2>
+        </div>
+        <div class="imagenes">
+        <img src="./Project_files/imag1.jpg" alt="" class="image">
+        <img src="./Project_files/imag2.jpg" alt="" class="image">
+        <img src="./Project_files/imag3.jpg" alt="" class="image">
+        <img src="./Project_files/imag4.jpg" alt="" class="image">
+        </div>
+    </section>
+    <section class="objective">
+        <div class="tittle-objetive">
+            <h2>Caracteristicas / Objetivo </h2>
+        </div>
+        <div class="box-description">
+        <div class="description">
+            <h2>Diseño Responsivo</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.!</p>
+        </div>
+        <div class="description">
+            <h2>Navegaciòn Intuitiva</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.!</p>
+        </div>
+        <div class="description">
+            <h2>Buen Rendimiento</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.!</p>
+        </div>
+        </div>
+    </section>
+    <div class="comment-section">
+        <h2>Comentarios</h2>
+        <div class="form-container">
+        <form>
+            <label for="comentarios"></label>
+            <textarea id="comentarios" rows="10" cols="80" placeholder="Escriba su comentario aquí" class="comment"></textarea>
+            <button type="submit" class="button-comment">Enviar Comentario</button>
+        </form>
+        </div>
+    </div>  
+    <footer><p>© All rights reserved 2026</p> </footer>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
